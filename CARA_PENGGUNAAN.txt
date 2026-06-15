@@ -1,0 +1,82 @@
+================================================================
+  PANDUAN MENJALANKAN PROYEK ANALISIS DATA
+  Prediksi Konsumsi Baterai Smartphone
+================================================================
+
+PERSYARATAN SISTEM
+------------------
+- Python 3.8 atau lebih baru
+- pip (Python package manager)
+- Jupyter Notebook / JupyterLab
+
+================================================================
+LANGKAH 1 — PERSIAPAN ENVIRONMENT
+================================================================
+
+Buka terminal / command prompt, lalu jalankan:
+
+  pip install -r requirements.txt
+
+Atau install manual:
+
+  pip install pandas numpy matplotlib seaborn scikit-learn scipy statsmodels jupyter
+
+================================================================
+LANGKAH 2 — PERSIAPAN DATASET
+================================================================
+
+Pastikan file berikut berada di FOLDER YANG SAMA dengan analysis.ipynb:
+
+  - smartphone_battery_features.csv
+  - smartphone_battery_targets.csv
+
+================================================================
+LANGKAH 3 — JALANKAN JUPYTER NOTEBOOK
+================================================================
+
+Dari terminal, masuk ke folder project:
+
+  cd /path/ke/folder/project
+
+Lalu jalankan Jupyter:
+
+  jupyter notebook
+
+Browser akan terbuka otomatis. Klik file:
+
+  analysis.ipynb
+
+================================================================
+LANGKAH 4 — EKSEKUSI NOTEBOOK
+================================================================
+
+Di dalam Jupyter Notebook:
+
+  1. Pilih menu: Kernel > Restart & Run All
+     (untuk menjalankan semua cell sekaligus)
+
+  ATAU
+
+  2. Tekan Shift + Enter pada setiap cell secara berurutan
+
+Waktu eksekusi estimasi: 2–5 menit (tergantung spesifikasi komputer)
+
+================================================================
+LANGKAH 5 — LIHAT OUTPUT
+================================================================
+
+Setelah eksekusi selesai:
+- Grafik ditampilkan inline di dalam notebook
+- File PNG grafik tersimpan otomatis di folder yang sama
+- Metrik evaluasi model tercetak di output cell terakhir
+
+================================================================
+CATATAN
+================================================================
+
+- Jangan ubah nama file CSV (harus persis sama)
+- Jika ada error "ModuleNotFoundError", jalankan ulang:
+    pip install -r requirements.txt
+- Tested pada Python 3.10, Windows/Linux/macOS
+
+================================================================
